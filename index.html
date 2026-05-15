@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Node - Pedido</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Pizzería Don Node</h1>
+
+        <form action="/pedido" method="POST">
+
+            <label>Nombre del cliente:</label><br>
+            <input type="text" name="cliente" required>
+
+            <br>
+
+            <label>Tamaño de la pizza:</label><br>
+
+            <select name="tamano" required>
+                <option value="Chica">Chica</option>
+                <option value="Mediana">Mediana</option>
+                <option value="Grande">Grande</option>
+            </select>
+
+            <br>
+
+            <label>Ingredientes:</label><br>
+
+            <input type="checkbox" name="ingredientes" value="Jamón"> Jamón <br>
+
+            <input type="checkbox" name="ingredientes" value="Queso extra"> Queso extra <br>
+
+            <input type="checkbox" name="ingredientes" value="Champiñones"> Champiñones <br>
+
+            <input type="checkbox" name="ingredientes" value="Aceitunas"> Aceitunas <br>
+
+            <input type="checkbox" name="ingredientes" value="Cebolla"> Cebolla <br>
+
+            <input type="checkbox" name="ingredientes" value="Pimentón"> Pimentón <br>
+
+            <input type="checkbox" name="ingredientes" value="Tocino"> Tocino <br>
+
+            <br>
+
+            <label>Cantidad de pizzas:</label><br>
+
+            <input type="number" name="cantidad" min="1" value="1" required>
+
+            <br>
+
+            <button type="submit">Registrar pedido</button>
+
+        </form>
+
+        <a href="/pedidos">Ver lista de pedidos</a>
+
+    </div>
+
+</body>
+</html>
